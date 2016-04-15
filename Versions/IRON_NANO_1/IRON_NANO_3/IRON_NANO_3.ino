@@ -75,10 +75,9 @@ int seconds, minutes, hours = 0;
 //=======================================================
 Encoder1 myEncoder = Encoder1(Encoder1ChnA,Encoder1ChnB,EncoderDetent);
 PID myPID(&Input, &Output, &Setpoint, consKp, consKi, consKd, DIRECT);
-LiquidCrystal_I2C lcd(LCD_I2C_ADDRESS, 2, 1, 0, 4, 5, 6, 7, 3, POSITIVE);  // Set the LCD I2C address
+LiquidCrystal_I2C lcd(LCD_I2C_ADDRESS, 2, 1, 0, 4, 5, 6, 7, 3, POSITIVE);  // (lcd_Addr, En, Rw, Rs, d4, d5, d6, d7, backlighPin, t_backlighPol pol = POSITIVE )
 StopWatch sw_millis;    
 StopWatch sw_secs(StopWatch::SECONDS);
-//LiquidCrystal_I2C lcd(LCD_I2C_ADDRESS, 5, 6, 7, 2, 3, 4, 1, 0, NEGATIVE);  // Set the LCD I2C address
 //=======================================================
 void customChars()
 {
