@@ -9,7 +9,7 @@
 #include <PID_v1.h>
 #include <StopWatch.h>
 //=======================================================
-#define VERSION "v1.5"		
+#define VERSION "v1.0"		
 #define INTRO
 
 #define LCD_I2C_ADDRESS      0x27
