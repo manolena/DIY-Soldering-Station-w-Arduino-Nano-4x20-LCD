@@ -83,7 +83,6 @@ StopWatch sw_millis;
 StopWatch sw_countdownmillis;  
 StopWatch sw_secs(StopWatch::SECONDS);
 StopWatch sw_countdownsecs(StopWatch::SECONDS);
-//LiquidCrystal_I2C lcd(LCD_I2C_ADDRESS, 5, 6, 7, 2, 3, 4, 1, 0, NEGATIVE);  // Set the LCD I2C address
 //=======================================================
 void customChars()
 {
@@ -136,7 +135,7 @@ void setup()
   lcd.setBacklight(HIGH);
   Serial.begin(9600);
   Serial.println("Sketch'es location:");
-  Serial.println("C:\\Users\\Administrator\\Documents\\DXP\\AVR SOLDERING IRON\\FIRMWARE\\NANO\\IRON_NANO_1");
+  Serial.println("C:\\Users\\Administrator\\Documents\\DXP\\AVR SOLDERING IRON\\FIRMWARE\\NANO\\IRON_NANO_5");
 
   byte newChar[8];
   int i; 
@@ -682,7 +681,7 @@ void splashScreen()
   lcd.setCursor(0,1);
   lcd.print(F(" SOLDERING STATION  "));
   lcd.setCursor(0,2);
-  lcd.print(F("   MANOS MAR v1.0   "));
+  lcd.print(F("   MANOS MAR v1.5   "));
   lcd.setCursor(0,3);
   lcd.print(F("    96W/25-400"));
   lcd.write(223);
