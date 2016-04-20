@@ -688,8 +688,6 @@ void splashScreen()
   lcd.print(F("C    "));
   delay(5000);
   lcd.clear();
-  //  showIron(0,0);
-  //  delay(5000);
 }  
 //=======================================================================
 void showIron(int row, int line)
