@@ -43,7 +43,7 @@
 
 #define SIZE_BAR (9 * 5)
 #define TIMER_10MIN            1//0
-#define TIMER_20MIN            2//0
+#define TIMER_20MIN            20//0
 //=======================================================
 int pwm = 0; //pwm Out Val 0.. 255
 unsigned int actual_temperature, will_temp = STANDBY_TEMP;
@@ -181,7 +181,7 @@ void setup()
   myEncoder.setMinMax(MIN_TEMP,MAX_TEMP);
 
   beepBuzzer(6250,80);
-//  splashScreen();
+  splashScreen();
   sw_secs.start();
   sw_millis.start(); 
   sw_countdownmillis.start(); 
