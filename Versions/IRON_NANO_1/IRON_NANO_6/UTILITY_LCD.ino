@@ -50,7 +50,7 @@ void splashScreen()
   lcd.setCursor(0,1);
   lcd.print(F(" SOLDERING STATION  "));
   lcd.setCursor(0,2);
-  lcd.print(F("   MANOS MAR v1.0   "));
+  lcd.print(F("   MANOS MAR v1.6   "));
   lcd.setCursor(0,3);
   lcd.print(F("    96W/25-400"));
   lcd.write(223);
